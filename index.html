@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <style>
+        body {
+            background-color: #eee
+        }
+
+        .mt-100 {
+            margin-top: 100px;
+        }
+
+        .card {
+            border-radius: 20px !important;
+            border-color: #e1e7ec;
+            background-color:rgb(204, 193, 179);
+        }
+
+        .mb-30 {
+            margin-bottom: 30px !important;
+        }
+
+        .card-img-tiles {
+            display: block;
+            border-bottom: 1px solid #e1e7ec;
+        }
+
+        a {
+            color: #0da9ef;
+            text-decoration: none !important;
+        }
+
+        .card-img-tiles>.inner {
+            display: table;
+            width: 100%;
+        }
+
+        .card-img-tiles .main-img,
+        .card-img-tiles .thumblist {
+            display: table-cell;
+            width: 65%;
+            padding: 15px;
+            vertical-align: middle;
+        }
+
+        .card-img-tiles .main-img>img:last-child,
+        .card-img-tiles .thumblist>img:last-child {
+            margin-bottom: 0;
+        }
+
+        .card-img-tiles .main-img>img,
+        .card-img-tiles .thumblist>img {
+            display: block;
+            width: 100%;
+            margin-bottom: 6px;
+        }
+
+        .thumblist {
+            width: 35%;
+            border-left: 1px solid #e1e7ec !important;
+            display: table-cell;
+            width: 65%;
+            padding: 15px;
+            vertical-align: middle;
+        }
+
+
+
+        .card-img-tiles .thumblist>img {
+            display: block;
+            width: 100%;
+            margin-bottom: 6px;
+        }
+
+        .btn-group-sm>.btn,
+        .btn-sm {
+            padding: .45rem .5rem !important;
+            font-size: .875rem;
+            line-height: 1.5;
+            border-radius: .2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg p">
+        <div class="container-fluid">
+            <h3 class="text-danger pt-3 pb-2 pe-4 ">
+                MAA ELECTRONICS
+            </h3>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active p-3" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle p-3" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu bg-dark ">
+                            <li><a class="dropdown-item bg-dark text-light mask flex-center rgba-red-strong"
+                                    href="#">TV</a></li>
+                            <li><a class="dropdown-item bg-dark text-light" href="#">AC </a></li>
+                            <li>
+                                <hr class="dropdown-divider bg-dark text-light">
+                            </li>
+                            <li><a class="dropdown-item bg-dark text-light" href="#">Mobile Phones</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-3" href="#">Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-3" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-3" href="#">Contact Us </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-3" href="#">Log-in/Sign-Up &nbsp; | &nbsp; <img
+                                class="log-in rounded-circle" style="width: 30px;"
+                                src="https://w7.pngwing.com/pngs/340/956/png-transparent-profile-user-icon-computer-icons-user-profile-head-ico-miscellaneous-black-desktop-wallpaper-thumbnail.png"
+                                alt="Log-in logo"> </a>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Click On The <a href="#">Log-in/Sign-Up</a> </strong> to order a Products. <button type="button"
+            class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="container mt-100">
+
+
+
+
+        <div class="row">
+            <div class="col-md-3 ccol-sm-6">
+                <div class="card mb-30"><a class="card-img-tiles" href="#" data-abc="true">
+                        <div class="inner">
+                            <div class="main-img"><img
+                                    src="https://www.ifbappliances.com/media/catalog/product/cache/f6d60de4095a6e5204f81c04aa5b766f/e/x/executive_mxs_id_1014_front300.png"
+                                    alt="Category"></div>
+                            <div class="thumblist"><img
+                                    src="https://www.ifbappliances.com/media/catalog/product/cache/f6d60de4095a6e5204f81c04aa5b766f/e/x/executive_mxs_id_1014_front300.png"
+                                    alt="Category"><img
+                                    src="https://www.ifbappliances.com/media/catalog/product/cache/f6d60de4095a6e5204f81c04aa5b766f/e/x/executive_mxs_id_1014_front300.png"
+                                    alt="Category"></div>
+                        </div>
+                    </a>
+                    <div class="card-body text-center">
+                        <h4 class="card-title">washing machine</h4>
+                        <p class="text-muted">Starting from 499</p><a class="btn btn-outline-primary btn-sm" href="#"
+                            data-abc="true">View Products</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card mb-30"><a class="card-img-tiles" href="#" data-abc="true">
+                        <div class="inner">
+                            <div class="main-img"><img
+                                    src="https://www.ifbappliances.com/media/catalog/product/cache/f6d60de4095a6e5204f81c04aa5b766f/e/x/executive_mxs_id_1014_front300.png"
+                                    alt="Category"></div>
+                            <div class="thumblist"><img
+                                    src="https://www.ifbappliances.com/media/catalog/product/cache/f6d60de4095a6e5204f81c04aa5b766f/e/x/executive_mxs_id_1014_front300.png"
+                                    alt="Category"><img
+                                    src="https://www.ifbappliances.com/media/catalog/product/cache/f6d60de4095a6e5204f81c04aa5b766f/e/x/executive_mxs_id_1014_front300.png"
+                                    alt="Category"></div>
+                        </div>
+                    </a>
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Mobiles</h4>
+                        <p class="text-muted">Starting from $50</p><a class="btn btn-outline-primary btn-sm" href="#"
+                            data-abc="true">View Products</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card mb-30"><a class="card-img-tiles" href="#" data-abc="true">
+                        <div class="inner">
+                            <div class="main-img"><img
+                                    src="https://www.ifbappliances.com/media/catalog/product/cache/f6d60de4095a6e5204f81c04aa5b766f/e/x/executive_mxs_id_1014_front300.png"
+                                    alt="Category"></div>
+                            <div class="thumblist"><img
+                                    src="https://www.ifbappliances.com/media/catalog/product/cache/f6d60de4095a6e5204f81c04aa5b766f/e/x/executive_mxs_id_1014_front300.png"
+                                    alt="Category"><img
+                                    src="https://www.ifbappliances.com/media/catalog/product/cache/f6d60de4095a6e5204f81c04aa5b766f/e/x/executive_mxs_id_1014_front300.png"
+                                    alt="Category"></div>
+                        </div>
+                    </a>
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Accessories</h4>
+                        <p class="text-muted">Starting from $9</p><a class="btn btn-outline-primary btn-sm" href="#"
+                            data-abc="true">View Products</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card mb-30"><a class="card-img-tiles" href="#" data-abc="true">
+                        <div class="inner">
+                            <div class="main-img"><img
+                                    src="https://www.ifbappliances.com/media/catalog/product/cache/f6d60de4095a6e5204f81c04aa5b766f/e/x/executive_mxs_id_1014_front300.png"
+                                    alt="Category"></div>
+                            <div class="thumblist"><img
+                                    src="https://www.ifbappliances.com/media/catalog/product/cache/f6d60de4095a6e5204f81c04aa5b766f/e/x/executive_mxs_id_1014_front300.png"
+                                    alt="Category"><img
+                                    src="https://www.ifbappliances.com/media/catalog/product/cache/f6d60de4095a6e5204f81c04aa5b766f/e/x/executive_mxs_id_1014_front300.png"
+                                    alt="Category"></div>
+                        </div>
+                    </a>
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Accessories</h4>
+                        <p class="text-muted">Starting from $9</p><a class="btn btn-outline-primary btn-sm" href="#"
+                            data-abc="true">View Products</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
