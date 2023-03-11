@@ -20,7 +20,7 @@
         .card {
             border-radius: 20px !important;
             border-color: #e1e7ec;
-            background-color:rgb(204, 193, 179);
+            background-color: rgb(204, 193, 179);
         }
 
         .mb-30 {
@@ -102,9 +102,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- home -->
                     <li class="nav-item">
                         <a class="nav-link active p-3" aria-current="page" href="#">Home</a>
                     </li>
+                    <!-- product -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle p-3" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -120,23 +122,67 @@
                             <li><a class="dropdown-item bg-dark text-light" href="#">Mobile Phones</a></li>
                         </ul>
                     </li>
+                    <!-- cart -->
                     <li class="nav-item">
                         <a class="nav-link p-3" href="#">Cart</a>
                     </li>
+                    <!-- about -->
                     <li class="nav-item">
                         <a class="nav-link p-3" href="#">About</a>
                     </li>
+                    <!-- contact us -->
                     <li class="nav-item">
                         <a class="nav-link p-3" href="#">Contact Us </a>
                     </li>
+                    <!-- logins -->
                     <li class="nav-item">
-                        <a class="nav-link p-3" href="#">Log-in/Sign-Up &nbsp; | &nbsp; <img
-                                class="log-in rounded-circle" style="width: 30px;"
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-dark mt-2" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">
+                            Log-in/Sign-Up <img class="log-in rounded-circle" style="width: 30px;"
                                 src="https://w7.pngwing.com/pngs/340/956/png-transparent-profile-user-icon-computer-icons-user-profile-head-ico-miscellaneous-black-desktop-wallpaper-thumbnail.png"
-                                alt="Log-in logo"> </a>
+                                alt="Log-in logo">
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header text-white bg-dark">
+                                        <h1 class="modal-title fs-4 " id="staticBackdropLabel">Log-in/Sign-Up</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-white bg-dark">
+                                        <p align="center"> Enter your mail
+                                            <input class="" type="email" name="mail" id="mail">
+                                        </p>
+                                        <p align="center">
+                                            Enter password
+                                            <input type="password" name="pass" id="pass">
+                                        </p>
+                                        <div align="center" class="container">
+                                            <button class="btn btn-submit bg-primary text-white"
+                                                type="submit">login</button>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer text-white bg-dark">
+                                        <div align="left" class="container">
+                                            <a class="" href="#">forget your password?</a>
+                                            <div align="left" class="container">
+                                                <a class="" href="#">Sign-Up?</a>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                     </li>
 
                 </ul>
+
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
@@ -167,10 +213,6 @@
 
 
     <div class="container mt-100">
-
-
-
-
         <div class="row">
             <div class="col-md-3 ccol-sm-6">
                 <div class="card mb-30"><a class="card-img-tiles" href="#" data-abc="true">
@@ -206,7 +248,7 @@
                         </div>
                     </a>
                     <div class="card-body text-center">
-                        <h4 class="card-title">Mobiles</h4>
+                        <h4 class="card-title">washing machine</h4>
                         <p class="text-muted">Starting from $50</p><a class="btn btn-outline-primary btn-sm" href="#"
                             data-abc="true">View Products</a>
                     </div>
@@ -226,7 +268,7 @@
                         </div>
                     </a>
                     <div class="card-body text-center">
-                        <h4 class="card-title">Accessories</h4>
+                        <h4 class="card-title">washing machine</h4>
                         <p class="text-muted">Starting from $9</p><a class="btn btn-outline-primary btn-sm" href="#"
                             data-abc="true">View Products</a>
                     </div>
@@ -246,7 +288,7 @@
                         </div>
                     </a>
                     <div class="card-body text-center">
-                        <h4 class="card-title">Accessories</h4>
+                        <h4 class="card-title">washing machine</h4>
                         <p class="text-muted">Starting from $9</p><a class="btn btn-outline-primary btn-sm" href="#"
                             data-abc="true">View Products</a>
                     </div>
